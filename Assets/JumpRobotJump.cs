@@ -44,6 +44,11 @@ public class JumpRobotJump : MonoBehaviour
        {
            Physics2D.IgnoreCollision(Ground1.GetComponent<Collider2D>(), Ground1.GetComponent<Collider2D>());
        }
+      else if(collision.contacts[0].normal.y < -0.5)
+        {
+            GameManager.GameOver();
+        }     
+
        else
        {
         GameManager.GameOver();

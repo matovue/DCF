@@ -1186,6 +1186,7 @@ GameObject:
   - component: {fileID: 1760440557}
   - component: {fileID: 1760440556}
   - component: {fileID: 1760440555}
+  - component: {fileID: 1760440561}
   m_Layer: 0
   m_Name: Scene - Walkbot.000 (1)
   m_TagString: Untagged
@@ -1339,3 +1340,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1760440561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760440554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9182e51ea9b3f024d80f805bace663d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 1.5
+  lowJumpMultiplier: 2

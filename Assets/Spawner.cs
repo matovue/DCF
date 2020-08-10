@@ -36,7 +36,8 @@ public class Spawner : MonoBehaviour
             GameObject newpipe = Instantiate(pipe);
             newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
             // because we will spawn the pipe infinatley, we can destroy the pipe after some time has passed here its 15
-            Destroy(newpipe, 10); 
+            // 7 as any bigger eg. > 10 causes the spwner to start glitching after some time aroung 6000KB points
+            Destroy(newpipe, 7); 
             timer = 0;
             
          

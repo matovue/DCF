@@ -11,7 +11,7 @@ public class GameManaggger : MonoBehaviour
 
   public Text highscoreText; 
   
-  //public Text currentscoreText;
+  public Text currentscoreText;
 
     void Start()
     {
@@ -26,8 +26,12 @@ public class GameManaggger : MonoBehaviour
         //when character dies the GameOverCanvas is displayed and game is frozen
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
-        if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue)
-         PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
+        if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
+          PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
+        }
+          PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue);
+        
+         
         
     }
     // Start is called before the first frame update
@@ -48,7 +52,8 @@ public class GameManaggger : MonoBehaviour
       {
           Score.scoreValue += 0;  
          
-           highscoreText.text = "HighScore : " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + "KB";  
+           highscoreText.text = "HighScore : " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + "KB"; 
+           currentscoreText.text = "CurrentScore : " + ((int)PlayerPrefs.GetFloat ("CurrentScore")).ToString() + "KB"; 
       } 
     }
 }

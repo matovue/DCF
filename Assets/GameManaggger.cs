@@ -10,6 +10,8 @@ public class GameManaggger : MonoBehaviour
   public GameObject GameOverCanvas;
 
   public Text highscoreText; 
+  
+  //public Text currentscoreText;
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class GameManaggger : MonoBehaviour
         //when character dies the GameOverCanvas is displayed and game is frozen
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+        if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue)
          PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
         
     }

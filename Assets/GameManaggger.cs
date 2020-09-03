@@ -52,8 +52,8 @@ public class GameManaggger : MonoBehaviour
       {
           Score.scoreValue += 0;  
          
-           highscoreText.text = "HighScore : " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + "KB"; 
-           currentscoreText.text = "CurrentScore : " + ((int)PlayerPrefs.GetFloat ("CurrentScore")).ToString() + "KB"; 
+           highscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + " KB"; 
+           currentscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("CurrentScore")).ToString() + " KB"; 
       } 
     }
 }

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; //add when refrencing text in unity 
 using UnityEngine.SceneManagement;
 
 public class GameManaggger : MonoBehaviour
 {
   public GameObject GameOverCanvas;
 
-  public Text highscoreText; 
+  public Text highscoreText; //add (using UnityEngine.UI;) when refrencing text field in unity 
   
-  public Text currentscoreText;
+  public Text currentscoreText; //add (using UnityEngine.UI;) when refrencing text field in unity 
 
     void Start()
     {
@@ -26,6 +26,11 @@ public class GameManaggger : MonoBehaviour
         //when character dies the GameOverCanvas is displayed and game is frozen
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+        // ***PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);***
+        // PlayerPrefs saves data, the value is saved in "HighScore" using SetFloat and Score.scoreValue is what you
+        //are saving/setiing. You can then use PlayerPrefs.GetFloat to get the data saved in PlayerPrefs.SetFloat 
+        //Below if the new value is greater than the value saved the new value is stored replacing the previous
+        // if not it stays the same
         if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
         }
@@ -51,7 +56,7 @@ public class GameManaggger : MonoBehaviour
      else if(Time.timeScale==0)  
       {
           Score.scoreValue += 0;  
-         
+         // Displays the stored PlayerPrefs values
            highscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + " KB"; 
            currentscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("CurrentScore")).ToString() + " KB"; 
       } 

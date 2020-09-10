@@ -13,6 +13,8 @@ public class GameManaggger : MonoBehaviour
   
   public Text currentscoreText; //add (using UnityEngine.UI;) when refrencing text field in unity 
 
+
+
     void Start()
     {
         // to start game is not frozen
@@ -35,16 +37,19 @@ public class GameManaggger : MonoBehaviour
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
         }
           PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue);
+      
         
          
         
     }
+
     // Start is called before the first frame update
     
     //reloads the scence when player dies and clicks the (GameOverCanvas-> Image) button created in unity
     public void Replay()
     {
         SceneManager.LoadScene(0);
+        
     }
 
     // Update is called once per frame

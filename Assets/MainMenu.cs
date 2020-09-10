@@ -13,4 +13,8 @@ public class MainMenu : MonoBehaviour
 // In unity we need to add scenes to the queue (file -> build settings -> then drag and drop scenes in the order you want them)
 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
  }
+
+ public void ExitGame (){
+SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+ }
 }

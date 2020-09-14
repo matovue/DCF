@@ -10,5 +10,7 @@ public class GameOverExit : MonoBehaviour
 
  public void ExitGame (){
  SceneManager.LoadScene("Menu");
+ // resets the score to zero
+ Score.scoreValue = 0;
  }
 }

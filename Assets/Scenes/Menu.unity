@@ -1109,6 +1109,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 83.111}
+--- !u!1 &842737779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 842737780}
+  - component: {fileID: 842737782}
+  - component: {fileID: 842737781}
+  m_Layer: 5
+  m_Name: dash1txt (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &842737780
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842737779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1883403001}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 22.000822, y: -174}
+  m_SizeDelta: {x: 662.3899, y: 64.20366}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &842737781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842737779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.990566, g: 0.978106, b: 0.990566, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 44
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 44
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ---------------------------------------------
+--- !u!222 &842737782
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842737779}
+  m_CullTransparentMesh: 0
 --- !u!1 &857030263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1934,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2099232789}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2182,8 +2261,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0008239746, y: -38.6}
-  m_SizeDelta: {x: -52.280457, y: -270.25577}
+  m_AnchoredPosition: {x: 1.2000122, y: -24}
+  m_SizeDelta: {x: -24.789795, y: -270.25577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405974940
 MonoBehaviour:
@@ -2212,7 +2291,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 55
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2222,11 +2301,8 @@ MonoBehaviour:
     surrounding you. Travel as far as you can to gain as much data from the **world
     while avoiding the firewalls and other obstacles.
 
-    *Hacked
 
-    **Machine
-
-    ***Bandwidth
+    *Hacked  **Machine ***Bandwidth
 
 '
 --- !u!222 &1405974941
@@ -2574,7 +2650,7 @@ RectTransform:
   m_Children:
   - {fileID: 96737723}
   m_Father: {fileID: 2099232789}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2782,7 +2858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1742188480
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2795,12 +2871,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2099232789}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159.99918, y: 38}
-  m_SizeDelta: {x: 175.7688, y: 71.16292}
+  m_AnchoredPosition: {x: -41.1, y: -26}
+  m_SizeDelta: {x: 445.18164, y: 295.9807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742188481
 MonoBehaviour:
@@ -2824,7 +2900,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2b78ea26373c8134babd4b9761aeeeb8, type: 3}
-    m_FontSize: 38
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2835,7 +2911,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Avoid:'
+  m_Text: Firewall's are a first line of defence blocking outsiders from gaining
+    unauthorized access to the private data on your computer. There are different
+    tricks that cybercriminals can use to hack or bypass  your network firewalls.
 --- !u!222 &1742188482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3061,6 +3139,7 @@ RectTransform:
   - {fileID: 857030264}
   - {fileID: 1405974939}
   - {fileID: 1554285170}
+  - {fileID: 842737780}
   m_Father: {fileID: 886648915}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3185,8 +3264,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936943312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -280.857, y: -301.522, z: 0}
-  m_LocalScale: {x: 1.2328402, y: 0.74559456, z: 1.02239}
+  m_LocalPosition: {x: -284.461, y: -301.522, z: 0}
+  m_LocalScale: {x: 0.83752894, y: 0.74559456, z: 1.02239}
   m_Children: []
   m_Father: {fileID: 2099232789}
   m_RootOrder: 0
@@ -3352,9 +3431,9 @@ RectTransform:
   - {fileID: 1936943313}
   - {fileID: 1934292335}
   - {fileID: 609399130}
-  - {fileID: 1742188480}
   - {fileID: 1287393421}
   - {fileID: 1613357883}
+  - {fileID: 1742188480}
   m_Father: {fileID: 886648915}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

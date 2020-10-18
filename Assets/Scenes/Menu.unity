@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 893764525}
   - component: {fileID: 893764524}
   m_Layer: 5
-  m_Name: AboutButton
+  m_Name: HelpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Avoid:'
+  m_Text: 'WARNING:'
 --- !u!222 &931835804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2254,7 +2254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373610365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -281.34244, y: -302.85, z: 0}
+  m_LocalPosition: {x: -281.34244, y: -304.3, z: 0}
   m_LocalScale: {x: 1.4925373, y: 0.7249487, z: 1.4925373}
   m_Children: []
   m_Father: {fileID: 1883403001}
@@ -2915,7 +2915,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ABOUT
+  m_Text: HELP
 --- !u!222 &1733470728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3200,7 +3200,7 @@ GameObject:
   - component: {fileID: 1883403001}
   - component: {fileID: 1883403002}
   m_Layer: 5
-  m_Name: AboutPage
+  m_Name: HelpPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3348,7 +3348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936943312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -284.461, y: -301.522, z: 0}
+  m_LocalPosition: {x: -285.5, y: -304, z: 0}
   m_LocalScale: {x: 0.83752894, y: 0.74559456, z: 1.02239}
   m_Children: []
   m_Father: {fileID: 2099232789}

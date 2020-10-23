@@ -11,6 +11,8 @@ public class JumpRobotJump : MonoBehaviour
     public GameObject Ground;
     public GameObject Ground1;
 
+    public GameObject Messagee;
+  
 
     // Start is called before the first frame update
       void Start(){
@@ -28,7 +30,9 @@ public class JumpRobotJump : MonoBehaviour
             transform.rotation = Quaternion.Euler(0,0,0);
             // stops the object's z transform rotation from moving keeps it 0 
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+             Messagee.SetActive(false);
         }
+        
         
 }
 

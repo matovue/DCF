@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 71347336}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Messagee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2079,6 +2079,7 @@ MonoBehaviour:
   velocity: 9
   Ground: {fileID: 933813942}
   Ground1: {fileID: 223608849}
+  Messagee: {fileID: 71347335}
 --- !u!61 &1847525905
 BoxCollider2D:
   m_ObjectHideFlags: 0

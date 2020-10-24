@@ -30,6 +30,7 @@ public class JumpRobotJump : MonoBehaviour
             transform.rotation = Quaternion.Euler(0,0,0);
             // stops the object's z transform rotation from moving keeps it 0 
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            // If the user taps/clicks the message (TAP TO CONTINE) is hidden 
              Messagee.SetActive(false);
         }
         

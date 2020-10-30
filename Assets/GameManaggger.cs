@@ -13,13 +13,15 @@ public class GameManaggger : MonoBehaviour
   
   public Text currentscoreText; //add (using UnityEngine.UI;) when refrencing text field in unity 
 
-
+    public GameObject NeuHighScore;
+    
 
     void Start()
     {
         // to start game is not frozen
         GameOverCanvas.SetActive(false);
         Time.timeScale = 1;
+        GameOverCanvas.SetActive(false);
        
     }
 
@@ -35,6 +37,7 @@ public class GameManaggger : MonoBehaviour
         // if not it stays the same
         if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
+          NeuHighScore.SetActive(true);
         }
           PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue);
       

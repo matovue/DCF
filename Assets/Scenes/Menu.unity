@@ -1719,7 +1719,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2b78ea26373c8134babd4b9761aeeeb8, type: 3}
-    m_FontSize: 25
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1730,7 +1730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'AVOID OBJECTS BELOW:'
+  m_Text: 'AVOID THE OBJECTS BELOW:'
 --- !u!222 &931835804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2461,9 +2461,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Transported into a virtual world with low gravity and firewalls surrounding
-    you. Travel as far as you can to gain as much data from the world while avoiding
-    the firewalls and other obstacles.
+  m_Text: 'Transported into a virtual world with firewalls surrounding you. Travel
+    as far as you can to gain as much data from the world while avoiding the firewalls
+    and other obstacles.
 
 
 

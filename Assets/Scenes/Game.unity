@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2504bed045038824eb848553d02d9c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 3.5
+  maxTime: 3
   pipe: {fileID: 2096140814666709619, guid: e41e683f268a0e1409958170e641a2f7, type: 3}
   height: 3
 --- !u!4 &45490653

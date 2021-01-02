@@ -155,6 +155,7 @@ MonoBehaviour:
   maxTime: 3
   pipe: {fileID: 2096140814666709619, guid: e41e683f268a0e1409958170e641a2f7, type: 3}
   height: 3
+  newpipe: {fileID: 0}
 --- !u!4 &45490653
 Transform:
   m_ObjectHideFlags: 0
@@ -2049,7 +2050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1847525900
 Animator:
   serializedVersion: 3

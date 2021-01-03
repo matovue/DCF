@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
           newpipe = Instantiate(pipe);
-         newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+         newpipe.transform.position = /*transform.position  + */  new Vector3(0, Random.Range(-height, height), 0);
           
      
          
@@ -34,9 +34,9 @@ public class Spawner : MonoBehaviour
     void Update()
     {
           
-        if (newpipe.transform.position.y  < -0.5){
+        if (newpipe.transform.position.y  < -0.99){ 
             
-        newpipe.transform.position = new Vector3(0, 0, 0);
+        newpipe.transform.position = new Vector3(0, Random.Range(-1, 5), 0);
         print("sucess: " + newpipe.transform.position.y );
         }
         
@@ -45,13 +45,9 @@ public class Spawner : MonoBehaviour
         if(timer > maxTime)
         {
             GameObject newpipe = Instantiate(pipe);
-            newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+            newpipe.transform.position = /*transform.position  + */ new Vector3(0, Random.Range(1, 6), 0);
 
-            if (newpipe.transform.position.y  < -0.5){
             
-                newpipe.transform.position = new Vector3(0, 0, 0);
-        
-            }
             // because we will spawn the pipe infinatley, we can destroy the pipe after some time has passed here its 15
             // 7 as any bigger eg. > 10 causes the spwner to start glitching after some time aroung 6000KB points
             Destroy(newpipe, 7); 

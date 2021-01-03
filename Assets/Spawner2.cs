@@ -1,25 +1,54 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Spawner2 : MonoBehaviour {
-    public GameObject pipe;
-    public float respawnTime = 1.0f;
-    private Vector2 screenBounds;
+public class Spawner2 : MonoBehaviour
+{
+    // time we have to wait before new pipe is formed
+    public float maxTime = 1;
+    //Timer to count the time that is passing
+    private float timer = 0;
+    // reference to pipe game object we created in the unity app
+    public GameObject pipe2;
+    public float height;
 
-    // Use this for initialization
-    void Start () {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        StartCoroutine(asteroidWave());
+     public GameObject newpipe;
+
+ 
+
+    // Start is called before the first frame update
+    void Start()
+    {
+         
+         
+       
     }
-    private void spawnEnemy(){
-        GameObject a = Instantiate(pipe) as GameObject;
-        a.transform.position = new Vector2(screenBounds.x * -2, Random.Range(-screenBounds.y, screenBounds.y));
-    }
-    IEnumerator asteroidWave(){
-        while(true){
-            yield return new WaitForSeconds(respawnTime);
-            spawnEnemy();
+     
+    // Update is called once per frame
+    void Update()
+    {
+          
+        
+        
+        // each time the timer is greater than the max time variable we want to instantiate (create a new of the same thing) our pipe
+       // we will modify the height of the pipe slightly by using a randomly generated number ranged between -height and height
+        if(timer > maxTime)
+        {
+           GameObject newpipe = Instantiate(pipe2);
+            
+            // because we will spawn the pipe infinatley, we can destroy the pipe after some time has passed here its 15
+            // 7 as any bigger eg. > 10 causes the spwner to start glitching after some time aroung 6000KB points
+            Destroy(newpipe, 7); 
+            timer = 0;
+            
+          
         }
+        
+        // after spawning we can set the timer to restart
+        timer += Time.deltaTime;
+        
     }
 }

@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
           newpipe = Instantiate(pipe);
-         newpipe.transform.position = /*transform.position  + */  new Vector3(0, Random.Range(-height, height), 0);
+         newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-1, 5), 0);
           
      
          
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
           
         if (newpipe.transform.position.y  < -0.99){ 
             
-        newpipe.transform.position = new Vector3(0, Random.Range(-1, 5), 0);
+        newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-1, 5), 0);
         print("sucess: " + newpipe.transform.position.y );
         }
         

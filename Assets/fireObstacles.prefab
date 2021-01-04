@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1915526716444439954
+--- !u!1001 &4937144579934206609
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -75,17 +75,17 @@ PrefabInstance:
     - target: {fileID: 697746414252021493, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1296965725652670775, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.28
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 1425206047068912211, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.9471
+      value: 6.5671005
       objectReference: {fileID: 0}
     - target: {fileID: 1425206047068912211, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
@@ -95,7 +95,7 @@ PrefabInstance:
     - target: {fileID: 2096140814666709619, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_Name
-      value: 2Obstacles (1) Variant
+      value: fireObstacles
       objectReference: {fileID: 0}
     - target: {fileID: 2499042422266971190, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: 8166737902414444963, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8311794138443775164, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
@@ -140,12 +140,12 @@ PrefabInstance:
     - target: {fileID: 8436148135395609802, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436148135395609805, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.51
+      value: 5.130001
       objectReference: {fileID: 0}
     - target: {fileID: 8436148135395609805, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 8436148136094552035, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436148136094552036, guid: e41e683f268a0e1409958170e641a2f7,
         type: 3}

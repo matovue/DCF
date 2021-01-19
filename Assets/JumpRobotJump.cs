@@ -17,6 +17,8 @@ public class JumpRobotJump : MonoBehaviour
     // Start is called before the first frame update
       void Start(){
         rb = GetComponent<Rigidbody2D>();
+        //calling the Playsound method in SoundManagerScript.cs which plays the typing sound
+        SoundManagerScript.PlaySound("Typingg");
 
 }
 
@@ -24,6 +26,7 @@ public class JumpRobotJump : MonoBehaviour
      void Update(){
         if (Input.GetMouseButtonDown(0))
         {
+            
             //Jump
             rb.velocity = Vector2.up * velocity;
             //may not need this (test to see if it makes a difference to the rotations)
@@ -52,11 +55,14 @@ public class JumpRobotJump : MonoBehaviour
       else if(collision.contacts[0].normal.y < -0.5)
         {
             GameManager.GameOver();
+            //calling the StopSound method in SoundManagerScript.cs which stops any sound playing from SoundManagerScript.cs
+            SoundManagerScript.StopSound();
         }     
 
        else
        {
         GameManager.GameOver();
+        SoundManagerScript.StopSound();
         
     }
       

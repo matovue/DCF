@@ -22,6 +22,8 @@ public class GameManaggger : MonoBehaviour
         GameOverCanvas.SetActive(false);
         Time.timeScale = 1;
         GameOverCanvas.SetActive(false);
+        
+        
        
     }
 
@@ -60,6 +62,7 @@ public class GameManaggger : MonoBehaviour
     {
      if (Time.timeScale==1){
           Score.scoreValue += 1;
+          
      }
      else if(Time.timeScale==0)  
       {

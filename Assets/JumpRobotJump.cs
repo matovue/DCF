@@ -57,12 +57,15 @@ public class JumpRobotJump : MonoBehaviour
             GameManager.GameOver();
             //calling the StopSound method in SoundManagerScript.cs which stops any sound playing from SoundManagerScript.cs
             SoundManagerScript.StopSound();
+            //calling the PlayError method in SoundManagerScript.cs 
+            SoundManagerScript.PlayError("ErrorSound");
         }     
 
        else
        {
         GameManager.GameOver();
         SoundManagerScript.StopSound();
+        SoundManagerScript.PlayError("ErrorSound");
         
     }
       

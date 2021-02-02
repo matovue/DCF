@@ -3074,9 +3074,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There are different tricks that hackers use to bypass your network firewalls.
-    Firewalls are a first line of defence blocking outsiders from gaining unauthorised
-    access to the private data on your computer.
+  m_Text: "Hackers bypass firewalls by finding some path through that isn\u2019t
+    blocked. \nFirewalls are a first line of defence blocking outsiders from gaining
+    unauthorised access to the private data on your computer."
 --- !u!222 &1742188482
 CanvasRenderer:
   m_ObjectHideFlags: 0

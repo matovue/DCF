@@ -24,7 +24,7 @@ public class GameManaggger : MonoBehaviour
         Time.timeScale = 1;
         GameOverCanvas.SetActive(false);
         
-       if(this.enabled){
+       if(this.enabled == null) {
         Debug.Log(AdBanner);
         AdBanner.OnDestroy();
         

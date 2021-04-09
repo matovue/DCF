@@ -15,23 +15,29 @@ public class GameManaggger : MonoBehaviour
 
     public GameObject NeuHighScore;
     
+    private AdsBanner AdBanner;
 
-    void Start()
+    public void Start()
     {
         // to start game is not frozen
         GameOverCanvas.SetActive(false);
         Time.timeScale = 1;
         GameOverCanvas.SetActive(false);
         
+       if(this.enabled){
+        Debug.Log(AdBanner);
+        AdBanner.OnDestroy();
         
-       
+        }
     }
+    
 
     public void GameOver()
     {
         //when character dies the GameOverCanvas is displayed and game is frozen
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+         
         // ***PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);***
         // PlayerPrefs saves data, the value is saved in "HighScore" using SetFloat and Score.scoreValue is what you
         //are saving/setiing. You can then use PlayerPrefs.GetFloat to get the data saved in PlayerPrefs.SetFloat 

@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour
         if (newpipe.transform.position.y  < -0.99){ 
             
         newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-1, 5), 0);
-        print("sucess: " + newpipe.transform.position.y );
+//        print("sucess: " + newpipe.transform.position.y );
         }
         
         // each time the timer is greater than the max time variable we want to instantiate (create a new of the same thing) our pipe
@@ -53,7 +53,7 @@ public class Spawner : MonoBehaviour
             Destroy(newpipe, 7); 
             timer = 0;
             
-         print("TEST: " + newpipe.transform.position.y);  
+         //print("TEST: " + newpipe.transform.position.y);  
         }
         
         // after spawning we can set the timer to restart

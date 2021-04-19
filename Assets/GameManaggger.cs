@@ -46,6 +46,9 @@ public class GameManaggger : MonoBehaviour
         if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
           NeuHighScore.SetActive(true);
+          
+          
+          
         }
           PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue);
       
@@ -76,6 +79,7 @@ public class GameManaggger : MonoBehaviour
          // Displays the stored PlayerPrefs values
            highscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("HighScore")).ToString() + " KB"; 
            currentscoreText.text = " " + ((int)PlayerPrefs.GetFloat ("CurrentScore")).ToString() + " KB"; 
+           
       } 
     }
 }

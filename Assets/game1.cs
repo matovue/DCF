@@ -5,12 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using System;
+using System.Text;
 
 
 public class game1 : MonoBehaviour
 {
 
-public Transform highscoreText;
+//public Transform highscoreText;
 public Transform sendScoreButton;
  public Transform checkScoreboardButton;
  private long Highscore; // Gamecenter requires a long variable
@@ -18,7 +20,7 @@ public Transform sendScoreButton;
     
    public void Who() 
     { 
-          highscoreText.GetComponent<Text>().text = Highscore.ToString(); 
+          Score.scoreValue = Highscore; 
                 sendScoreButton.GetComponent<Button>().onClick.AddListener(() => { ReportScore(Highscore, "com.dvf.leaderboard");  }); 
                 checkScoreboardButton.GetComponent<Button>().onClick.AddListener(() => {Social.ShowLeaderboardUI();  });
     }

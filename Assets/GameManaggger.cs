@@ -4,6 +4,9 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI; //add when refrencing text in unity 
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms;  
+using System;
+using System.Text;
 
 public class GameManaggger : MonoBehaviour
 {
@@ -46,6 +49,7 @@ public class GameManaggger : MonoBehaviour
         if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
           NeuHighScore.SetActive(true);
+          ReportScore(Score.scoreValue, "com.dvf.leaderboard");   
           
           
           
@@ -56,6 +60,12 @@ public class GameManaggger : MonoBehaviour
          
         
     }
+      void ReportScore (long score, string leaderboardID) {
+    Debug.Log ("Reporting score " + score + " on leaderboard " + leaderboardID);
+    Social.ReportScore (score, leaderboardID, success => {
+	Debug.Log(success ? "Reported score successfully" : "Failed to report score");
+    });
+      }
 
     // Start is called before the first frame update
     

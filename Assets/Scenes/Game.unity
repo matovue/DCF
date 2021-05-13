@@ -521,8 +521,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.0932, y: -33.713}
-  m_SizeDelta: {x: 65.7909, y: 26.041}
+  m_AnchoredPosition: {x: 91.7, y: -28}
+  m_SizeDelta: {x: 42.5802, y: 38.8851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169282639
 MonoBehaviour:
@@ -545,12 +545,12 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.2830189, g: 0.26343897, b: 0.26343897, a: 1}
+    m_NormalColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
     m_HighlightedColor: {r: 0.05660379, g: 0.054289795, b: 0.054289795, a: 1}
-    m_PressedColor: {r: 0.38679248, g: 0.3709802, b: 0.3709802, a: 1}
+    m_PressedColor: {r: 0.4433962, g: 0.43781888, b: 0.43781888, a: 1}
     m_SelectedColor: {r: 0.05660379, g: 0.05589179, b: 0.05589179, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 1.71
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -570,7 +570,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1002448203}
         m_TargetAssemblyTypeName: game1, Assembly-CSharp
-        m_MethodName: Who
+        m_MethodName: ScoreChecker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -600,8 +600,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5a41785517dbb7f479166cc63818d3fb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2313,8 +2313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3187757e3cf1c8241ab0063e96840413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highscoreText: {fileID: 97009069}
-  sendScoreButton: {fileID: 169282638}
   checkScoreboardButton: {fileID: 169282638}
 --- !u!1 &1033888866
 GameObject:
@@ -3020,7 +3018,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SUBMIT
+  m_Text: 
 --- !u!222 &1638811963
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class game : MonoBehaviour
 {
     void Start () {
         // Authenticate and register a ProcessAuthentication callback
-        // This call needs to be made before we can proceed to other calls in the Social API
+        // This call needs to be made before we can proceed to other calls in the Social API (DO IT ON THE HOMEPAGE)
         Social.localUser.Authenticate (ProcessAuthentication);
     }
 

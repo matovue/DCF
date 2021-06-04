@@ -1190,7 +1190,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2b78ea26373c8134babd4b9761aeeeb8, type: 3}
-    m_FontSize: 28
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2900,7 +2900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: -109}
+  m_AnchoredPosition: {x: -91, y: -109.6}
   m_SizeDelta: {x: 89.6045, y: 35.467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634654961
@@ -2925,9 +2925,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.2830189, g: 0.26343897, b: 0.26343897, a: 1}
-    m_HighlightedColor: {r: 0.05660379, g: 0.054289795, b: 0.054289795, a: 1}
-    m_PressedColor: {r: 0.38679248, g: 0.3709802, b: 0.3709802, a: 1}
-    m_SelectedColor: {r: 0.05660379, g: 0.05589179, b: 0.05589179, a: 1}
+    m_HighlightedColor: {r: 0.3490566, g: 0.331494, b: 0.331494, a: 1}
+    m_PressedColor: {r: 0.28235295, g: 0.2627451, b: 0.2627451, a: 0.88235295}
+    m_SelectedColor: {r: 0.28235295, g: 0.2627451, b: 0.2627451, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3780,7 +3780,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2b78ea26373c8134babd4b9761aeeeb8, type: 3}
-    m_FontSize: 25
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

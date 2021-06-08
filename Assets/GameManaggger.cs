@@ -54,7 +54,7 @@ public class GameManaggger : MonoBehaviour
         if (PlayerPrefs.GetFloat ("HighScore") < Score.scoreValue){
           PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);
           NeuHighScore.SetActive(true);
-          ReportScore(Score.scoreValue, "DVF");   
+          ReportScore(Score.scoreValue, "com.dvf.leaderboard1");   
           
           
           

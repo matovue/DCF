@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms;  
 using System;
 using System.Text;
-
 
 public class GameManaggger : MonoBehaviour
 {
@@ -41,11 +40,7 @@ public class GameManaggger : MonoBehaviour
         //when character dies the GameOverCanvas is displayed and game is frozen
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
-        
-        
          
-         
-
         // ***PlayerPrefs.SetFloat ("HighScore", Score.scoreValue);***
         // PlayerPrefs saves data, the value is saved in "HighScore" using SetFloat and Score.scoreValue is what you
         //are saving/setiing. You can then use PlayerPrefs.GetFloat to get the data saved in PlayerPrefs.SetFloat 
@@ -59,16 +54,12 @@ public class GameManaggger : MonoBehaviour
           
           
         }
-          PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue); 
-
-          
+          PlayerPrefs.SetFloat ("CurrentScore", Score.scoreValue);
+      
+        
+         
+        
     }
-
-     
-
-
-            
-    
       void ReportScore (long score, string leaderboardID) {
     Debug.Log ("Reporting score " + score + " on leaderboard " + leaderboardID);
     Social.ReportScore (score, leaderboardID, success => {
